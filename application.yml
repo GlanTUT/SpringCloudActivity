@@ -1,0 +1,26 @@
+server:
+  port: 8102
+spring:
+  application:
+    name: config
+  cloud:
+      client:
+        ip-address: 127.0.0.1
+      config:
+        server:
+          git:
+            # 配置文件所在仓库
+            uri: https://github.com/GlanTUT/SpringCloudActivity.git
+            # 配置文件在仓库中的位置
+            search-paths: config
+            username: GlanTUT
+            password: abc520201
+        label: master
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://admin:admin123@localhost:8101/eureka/
