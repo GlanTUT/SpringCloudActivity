@@ -1,5 +1,0 @@
-server:
-  port: 8202
-spring:
-  application:
-    name: blog

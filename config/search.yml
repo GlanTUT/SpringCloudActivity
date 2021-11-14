@@ -1,5 +1,0 @@
-server:
-  port: 8205
-spring:
-  application:
-    name: search

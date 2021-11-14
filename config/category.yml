@@ -1,5 +1,0 @@
-server:
-  port: 8204
-spring:
-  application:
-    name: category

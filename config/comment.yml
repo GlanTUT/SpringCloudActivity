@@ -1,5 +1,0 @@
-server:
-  port: 8203
-spring:
-  application:
-    name: comment
