@@ -1,26 +1,18 @@
 server:
-  port: 8102
-spring:
-  application:
-    name: config
-  cloud:
-      client:
-        ip-address: 127.0.0.1
-      config:
-        server:
-          git:
-            # 配置文件所在仓库
-            uri: https://github.com/GlanTUT/SpringCloudActivity.git
-            # 配置文件在仓库中的位置
-            search-paths: config
-            username: GlanTUT
-            password: abc520201
-        label: master
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://admin:admin123@localhost:8101/eureka/
+  port: 3302
+# 自动刷新配置
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+# 备用配置 当无法从远端拉取配置文件时 使用以下配置
+data:
+  env: NaN
+  user:
+    username: NaN
+    password: NaN
