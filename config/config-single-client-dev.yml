@@ -1,5 +1,15 @@
+spring:
+  profiles: dev
+  application:
+    name: config-single-client
+  cloud:
+    config:
+      uri: http://localhost:3302
+      label: master
+      profile: dev
 data:
   env: config-eureka-dev
   user:
     username: eureka-client-user
     password: 1291029102
+
