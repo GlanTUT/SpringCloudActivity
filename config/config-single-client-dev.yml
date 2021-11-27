@@ -1,6 +1,6 @@
 data:
   env: config-single-dev
   user:
-    username: single-client-dev-user
+    username: config-single-client-dev-user
     password: single-dev
 
